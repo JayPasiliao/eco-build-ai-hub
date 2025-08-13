@@ -2,41 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* EcoBuild AI Design System - Sustainable housing platform
+All colors MUST be HSL for proper theme integration.
 */
 
 @layer base {
   :root {
+    /* Brand Colors - Turquoise to Aqua Palette */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 0 0% 18%;
+    
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 0 0% 18%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --popover-foreground: 0 0% 18%;
+    
+    /* Primary: Turquoise #6CDFD2 */
+    --primary: 174 56% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 174 45% 38%;
+    
+    /* Secondary: Surface gray #F7F7F7 */
+    --secondary: 0 0% 97%;
+    --secondary-foreground: 0 0% 18%;
+    
+    /* Muted text #6A6A6A */
+    --muted: 0 0% 97%;
+    --muted-foreground: 0 0% 42%;
+    
+    --accent: 174 56% 65%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Border: #E6E6E6 */
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 174 56% 65%;
+    
+    --radius: 1rem;
+    
+    /* Custom Brand Variables */
+    --gradient-start: 174 56% 65%;  /* #6CDFD2 */
+    --gradient-end: 175 45% 73%;    /* #96DEDA */
+    --surface: 0 0% 97%;            /* #F7F7F7 */
+    
+    /* Typography */
+    --font-heading: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    
+    /* Layout */
+    --max-width: 1180px;
+    --section-spacing: 6rem;
+    --container-padding: 1.5rem;
+    
+    /* Shadows */
+    --shadow-soft: 0 6px 24px rgba(0, 0, 0, 0.06);
+    --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.08);
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--gradient-start)), hsl(var(--gradient-end)));
+    --gradient-blurred: linear-gradient(135deg, hsl(var(--gradient-start) / 0.8), hsl(var(--gradient-end) / 0.8));
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
 
     --sidebar-background: 0 0% 98%;
 
