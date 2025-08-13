@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Modern, vibrant color scheme */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    
+    /* Primary - Vibrant teal/cyan */
+    --primary: 180 100% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 180 100% 25%;
+    
+    /* Secondary - Soft blue-gray */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    
+    /* Accent - Warm orange */
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Card and surface colors */
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    
+    /* Muted and border colors */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    
+    /* Ring and destructive */
+    --ring: 180 100% 35%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    /* Radius */
+    --radius: 0.75rem;
+    
+    /* Custom colors for your design */
+    --surface: 0 0% 98%;
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 222.2 84% 4.9%;
+    --sidebar-primary: 180 100% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222.2 84% 4.9%;
+    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-ring: 180 100% 35%;
+    
+    /* Shadow and transition variables */
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: cubic-bezier(0.4, 0, 1, 1);
+    
+    /* Max width and spacing */
+    --max-width: 1200px;
+    --section-spacing: 5rem;
+    --container-padding: 1.5rem;
+    
+    /* Font families */
+    --font-heading: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    --font-body: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    
+    /* Gradient variables */
+    --gradient-hero: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 50%, #0891b2 100%);
+    --gradient-blurred: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(6, 182, 212, 0.1) 50%, rgba(8, 145, 178, 0.1) 100%);
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    
+    /* Dark mode primary - Brighter teal */
+    --primary: 180 100% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 180 100% 35%;
+    
+    /* Dark mode secondary */
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    
+    /* Dark mode accent */
+    --accent: 25 95% 63%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Dark mode cards and surfaces */
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    
+    /* Dark mode muted and borders */
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    
+    /* Dark mode ring and destructive */
+    --ring: 180 100% 45%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    
+    /* Dark mode surface */
+    --surface: 222.2 84% 4.9%;
+    --sidebar-background: 217.2 32.6% 17.5%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 180 100% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217.2 32.6% 17.5%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217.2 32.6% 17.5%;
+    --sidebar-ring: 180 100% 45%;
+    
+    /* Dark mode shadows */
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  /* Custom utility classes */
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-blurred {
+    background: var(--gradient-blurred);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .transition-smooth {
+    transition-timing-function: var(--transition-smooth);
+  }
+  
+  .transition-fast {
+    transition-timing-function: var(--transition-fast);
+  }
+  
+  .max-w-site {
+    max-width: var(--max-width);
+  }
+  
+  .py-section {
+    padding-top: var(--section-spacing);
+    padding-bottom: var(--section-spacing);
+  }
+  
+  .px-container {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+}
+
+@layer components {
+  /* Enhanced button styles */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary-dark transition-all duration-300 font-semibold shadow-soft hover:shadow-card;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-all duration-300 font-semibold;
+  }
+  
+  .btn-accent {
+    @apply bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 font-semibold shadow-soft;
+  }
+  
+  /* Card styles */
+  .card {
+    @apply bg-card border border-border rounded-2xl shadow-soft hover:shadow-card transition-all duration-300;
+  }
+  
+  .card-hover {
+    @apply hover:border-primary/20 hover:shadow-card transition-all duration-300;
+  }
+  
+  /* Text styles */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  .heading-xl {
+    @apply text-5xl font-bold text-foreground font-heading;
+  }
+  
+  .heading-lg {
+    @apply text-4xl font-bold text-foreground font-heading;
+  }
+  
+  .heading-md {
+    @apply text-3xl font-bold text-foreground font-heading;
+  }
+  
+  .body-lg {
+    @apply text-xl text-muted-foreground leading-relaxed;
+  }
+  
+  .body-md {
+    @apply text-lg text-muted-foreground leading-relaxed;
+  }
+}

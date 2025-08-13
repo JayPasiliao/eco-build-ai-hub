@@ -1,0 +1,16 @@
+name: Daily Rebuild
+on:
+  schedule:
+    - cron: "0 1 * * *"  # 09:00 Philippines time approx
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci
+      - run: npm run build
+      # If using Vercel CLI, set VERCEL_TOKEN in repo secrets and add:
+      # - run: npx vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
