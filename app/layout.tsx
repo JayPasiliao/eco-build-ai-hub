@@ -1,12 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export const metadata: Metadata = {
-  title: 'Eco Build AI Hub',
-  description: 'Your trusted source for AI tool reviews, comparisons, and insights',
+  title: "AI Hub",
+  description: "AI tools & automation reviews",
 }
 
 export default function RootLayout({
@@ -16,10 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <script defer data-domain="your-domain.com" src="https://plausible.io/js/script.js"></script>
-      </head>
-      <body className={inter.className}>{children}</body>
+      <body className="min-h-screen antialiased">{children}</body>
     </html>
   )
 }
