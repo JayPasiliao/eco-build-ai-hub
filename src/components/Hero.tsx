@@ -16,19 +16,19 @@ const Hero = () => {
         <div className="max-w-2xl">
           {/* Main Heading */}
           <h1 className="font-heading font-bold text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6">
-            AI-powered insights for{" "}
-            <span className="text-white/90">sustainable housing</span>
+            Honest reviews for{" "}
+            <span className="text-white/90">AI tools & automation</span>
           </h1>
           
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-            Simple guides, practical tools, and evidence-based tips to help you plan greener, more affordable homes.
+            Unbiased insights, detailed comparisons, and practical guides to help you choose the right AI tools for your workflow.
           </p>
           
           {/* Primary CTA */}
           <div className="mb-8">
             <Button variant="solid-white" size="lg" asChild className="text-lg px-8 py-4 h-auto">
-              <a href="#leadmagnet">Get it now</a>
+              <a href="#newsletter">Start exploring</a>
             </Button>
           </div>
           
@@ -39,7 +39,7 @@ const Hero = () => {
               className="flex items-center gap-2 hover:text-white transition-smooth"
             >
               <Twitter size={20} />
-              <span className="font-medium">Follow @EcoBuildAI</span>
+              <span className="font-medium">Follow @ToolPilotAI</span>
             </a>
             <a 
               href="#" 

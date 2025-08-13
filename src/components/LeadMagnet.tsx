@@ -16,20 +16,20 @@ const LeadMagnet = () => {
     setIsSubmitted(true);
     toast({
       title: "Success!",
-      description: "Thanks. Check your inbox in a minute.",
+      description: "Welcome! You're subscribed to our weekly insights.",
     });
     setEmail("");
   };
 
   return (
-    <section id="leadmagnet" className="py-section bg-surface">
+    <section id="newsletter" className="py-section bg-surface">
       <div className="max-w-site mx-auto px-container">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-foreground mb-6">
-            Free Starter Kit
+            Weekly AI Tool Insights
           </h2>
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-            A 12-page guide with a site checklist, materials quick-picks, and a basic embodied-carbon worksheet.
+            Get our weekly roundup of new AI tools, detailed reviews, and exclusive deals delivered to your inbox.
           </p>
           
           {!isSubmitted ? (
@@ -48,13 +48,13 @@ const LeadMagnet = () => {
                 size="lg" 
                 className="h-12 px-8"
               >
-                Send me the guide
+                Subscribe now
               </Button>
             </form>
           ) : (
             <div className="max-w-md mx-auto p-6 bg-primary/10 rounded-2xl border border-primary/20">
               <p className="text-lg font-medium text-primary">
-                Thanks. Check your inbox in a minute.
+                Welcome! You're subscribed to our weekly insights.
               </p>
             </div>
           )}

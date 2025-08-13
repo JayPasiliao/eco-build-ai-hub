@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 const Footer = () => {
   const footerColumns = [
     {
-      title: "EcoBuild AI",
+      title: "ToolPilot AI",
       links: [
         { label: "About", href: "#" },
         { label: "Contact", href: "#contact" }
@@ -12,9 +12,10 @@ const Footer = () => {
     {
       title: "Explore",
       links: [
-        { label: "Articles", href: "#articles" },
-        { label: "Resources", href: "#resources" },
-        { label: "Tools", href: "#tools" }
+        { label: "Reviews", href: "#reviews" },
+        { label: "Comparisons", href: "#comparisons" },
+        { label: "Guides", href: "#guides" },
+        { label: "Deals", href: "#deals" }
       ]
     },
     {
@@ -33,10 +34,10 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="md:col-span-1">
             <div className="font-heading font-bold text-xl text-foreground mb-4">
-              EcoBuild AI
+              ToolPilot AI
             </div>
             <p className="text-muted-foreground">
-              AI-powered insights for sustainable housing. Making green building accessible to everyone.
+              Honest reviews and guides for AI tools and automation. Helping you navigate the AI landscape with confidence.
             </p>
           </div>
           
@@ -65,7 +66,7 @@ const Footer = () => {
         {/* App Store Badges */}
         <div className="flex flex-col sm:flex-row items-center justify-between pt-8 border-t border-border gap-4">
           <p className="text-muted-foreground text-sm">
-            © 2024 EcoBuild AI. All rights reserved.
+            © 2024 ToolPilot AI. All rights reserved.
           </p>
           
           <div className="flex gap-4">

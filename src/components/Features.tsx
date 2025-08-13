@@ -4,18 +4,18 @@ const Features = () => {
   const features = [
     {
       icon: Book,
-      title: "Expert Articles",
-      text: "In-depth explainers and checklists generated with AI and reviewed for clarity."
+      title: "In-Depth Reviews",
+      text: "Comprehensive analysis of features, pricing, pros, cons, and real-world performance for every tool."
     },
     {
       icon: Calculator,
-      title: "Practical Tools",
-      text: "Embodied carbon, cost, and space calculators tailored for Philippine contexts."
+      title: "Side-by-Side Comparisons", 
+      text: "Direct feature and pricing comparisons to help you choose between similar AI tools."
     },
     {
       icon: Download,
       title: "Free Resources",
-      text: "Templates, SOPs, and permit-ready forms to speed up your workflow."
+      text: "Checklists, templates, and guides to help you evaluate and implement AI tools effectively."
     }
   ];
 
@@ -50,7 +50,7 @@ const Features = () => {
           {/* Text Content */}
           <div className="lg:order-2">
             <h2 className="font-heading font-bold text-4xl md:text-5xl text-foreground mb-12">
-              Design first
+              Research first
             </h2>
             
             <div className="space-y-8">

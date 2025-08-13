@@ -7,10 +7,10 @@ const Header = () => {
 
   const navLinks = [
     { label: "Home", href: "#" },
-    { label: "Articles", href: "#articles" },
-    { label: "Resources", href: "#resources" },
-    { label: "Tools", href: "#tools" },
-    { label: "Contact", href: "#contact" }
+    { label: "Reviews", href: "#reviews" },
+    { label: "Comparisons", href: "#comparisons" },
+    { label: "Guides", href: "#guides" },
+    { label: "Deals", href: "#deals" }
   ];
 
   return (
@@ -19,7 +19,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="font-heading font-bold text-xl text-white">
-            EcoBuild AI
+            ToolPilot AI
           </div>
 
           {/* Desktop Navigation */}
@@ -38,7 +38,7 @@ const Header = () => {
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <Button variant="outline" size="default" asChild>
-              <a href="#leadmagnet">Get Free Guide</a>
+              <a href="#newsletter">Get Updates</a>
             </Button>
           </div>
 
@@ -66,7 +66,7 @@ const Header = () => {
                 </a>
               ))}
               <Button variant="default" size="default" asChild className="mt-4">
-                <a href="#leadmagnet">Get Free Guide</a>
+                <a href="#newsletter">Get Updates</a>
               </Button>
             </nav>
           </div>

@@ -11,11 +11,11 @@ const ValueStrip = () => {
           {/* Text Content */}
           <div>
             <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-6">
-              Simplifying the way we{" "}
-              <span className="text-white/90">build green</span>
+              Cutting through the{" "}
+              <span className="text-white/90">AI tool noise</span>
             </h2>
             <p className="text-xl text-white/90 leading-relaxed">
-              From zoning to details, our AI condenses what matters so you can move faster with confidence.
+              From feature lists to real performance, we test everything so you can skip the guesswork and find tools that actually work.
             </p>
           </div>
           
@@ -28,7 +28,7 @@ const ValueStrip = () => {
                     <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                       <Smartphone size={16} className="text-white" />
                     </div>
-                    <span className="font-semibold text-foreground">EcoBuild AI</span>
+                    <span className="font-semibold text-foreground">ToolPilot AI</span>
                   </div>
                   
                   <div className="space-y-3 flex-1">

@@ -9,13 +9,13 @@ const ProjectsSection = () => {
           {/* Text Content */}
           <div>
             <h2 className="font-heading font-bold text-4xl md:text-5xl text-foreground mb-6">
-              All of your research, consolidated
+              Every tool tested, honestly reviewed
             </h2>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              We curate technical standards, local policies, and field-tested methods, then use AI to turn them into clear steps you can apply.
+              We test hundreds of AI tools, compare features, pricing, and real-world performance, then distill everything into clear recommendations.
             </p>
             <Button variant="outline" size="lg" asChild className="border-border text-foreground hover:bg-primary hover:text-white">
-              <a href="#articles">Learn more</a>
+              <a href="#reviews">Browse reviews</a>
             </Button>
           </div>
           
@@ -24,7 +24,7 @@ const ProjectsSection = () => {
             <div className="relative">
               <img 
                 src={phoneMockup} 
-                alt="EcoBuild AI mobile app interface"
+                alt="ToolPilot AI mobile app interface"
                 className="max-w-sm w-full transform rotate-6 hover:rotate-3 transition-smooth shadow-card"
               />
             </div>
